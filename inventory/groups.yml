@@ -1,0 +1,24 @@
+---
+global:
+  data:
+    asn: 65001
+
+eos:
+  # port: 6030
+  connection_options:
+    scrapli:
+      platform: arista_eos
+      # port: 22
+      extras:
+        # ssh_config_file: True
+        auth_strict_key: False
+
+spine:
+  data:
+    portcount_10G: 24
+    portcount_100G: 4
+
+leaf:
+  data:
+    portcount_10G: 24
+    portcount_100G: 4

@@ -1,0 +1,12 @@
+{% for interface in host["interfaces"].values()  %}
+{% if interface["role"]=="fabric" %}
+interface {{ interface["name"] }}
+    description {{ interface["desc"] }}
+    no switchport
+    ip address {{ interface["ipv4"] }}
+    ipv6 address {{ interface["ipv6"] }}
+    mtu 9214
+    no shutdown
+!
+{% endif %}
+{% endfor %}

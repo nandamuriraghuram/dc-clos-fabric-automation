@@ -1,0 +1,11 @@
+hostname {{ host["name"] }}
+username {{ host["default_user"] }} privilege 15 role network-admin secret sha512 {{ host["default_password_sha512"] }}
+!
+ip routing
+ipv6 unicast-routing
+!
+interface Loopback0
+    description {{ host["lo0"]["desc"] }}
+    ip address {{ host["lo0"]["ipv4"] }}
+    ipv6 address {{ host["lo0"]["ipv6"] }}
+!

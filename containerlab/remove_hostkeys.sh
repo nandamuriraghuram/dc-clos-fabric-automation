@@ -1,0 +1,8 @@
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "172.20.20.111"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "172.20.20.112"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "172.20.20.121"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "172.20.20.122"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "clab-eos-spine1"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "clab-eos-spine2"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "clab-eos-leaf1"
+ssh-keygen -f "/home/vireak/.ssh/known_hosts" -R "clab-eos-leaf2"
